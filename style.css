@@ -30,7 +30,7 @@ body {
   align-items: left;
   height: 600px;
   width: 600px;
-  margin: -200px 600px 0 600px;
+  margin: -200px auto;
 }
 
 h1 {
@@ -84,17 +84,30 @@ form {
   text-decoration: line-through;
 }
 
-.todos li:last-child {
+/* .todos li:last-child {
   color: #6b6d7b;
   font-size: 0.7rem;
-}
+} */
 
 small {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #6b6d7b;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  margin-top: 300px;
 }
 
-/* font-family: 'Josefin Sans', sans-serif; */
+/* Mobile: Still to do */
+
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  form {
+    max-width: 100%;
+    width: 300px;
+  }
+} ;
