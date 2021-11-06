@@ -84,7 +84,7 @@ form {
   text-decoration: line-through;
 }
 
-small {
+.instructions {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,14 +94,29 @@ small {
   margin-bottom: 20px;
 }
 
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.attribution a:active {
+  color: var(--todos-color);
+}
+
 /* Mobile */
 
 @media (max-width: 768px) {
-  /* html,
+  html,
   body {
     overflow-x: hidden;
-    overflow-y: hidden;
-  } */
+  }
 
   .container {
     display: flex;
