@@ -84,11 +84,6 @@ form {
   text-decoration: line-through;
 }
 
-/* .todos li:last-child {
-  color: #6b6d7b;
-  font-size: 0.7rem;
-} */
-
 small {
   display: flex;
   align-items: center;
@@ -96,14 +91,26 @@ small {
   color: #6b6d7b;
   font-size: 1rem;
   margin-top: 300px;
+  margin-bottom: 20px;
 }
 
-/* Mobile: Still to do */
+/* Mobile */
 
-@media only screen and (max-width: 768px) {
-  html,
+@media (max-width: 768px) {
+  /* html,
   body {
     overflow-x: hidden;
+    overflow-y: hidden;
+  } */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: left;
+    height: 300px;
+    width: 300px;
+    margin: -200px auto;
   }
 
   form {
